@@ -21,7 +21,7 @@ const buttonVariants = cva(
         emerald:
           "border border-[#3ecf8e] hover:bg-[#40bf86] hover:text-white rounded-md",
         blueish:
-          "border border-[#2563eb] hover:bg-[#1e40af] hover:text-white rounded-md",
+          "border border-[#2563eb] hover:bg-[#1e40af] hover:text-white rounded-md transition-300",
       },
       size: {
         default: "h-10 py-2 px-4",

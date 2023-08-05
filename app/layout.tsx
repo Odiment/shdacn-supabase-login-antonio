@@ -44,11 +44,12 @@ export default function RootLayout({ children }: RootLayoutProps) {
           <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
             <div className="relative flex min-h-screen flex-col">
               <SiteHeader />
-              <div className="hidden md:flex mt-16 w-20 flex-col fixed inset-y-0">
+              <div className="hidden md:flex w-20 flex-col fixed inset-y-0">
                 <Sidebar />
               </div>
               <div className="flex-1">{children}</div>
             </div>
+
             <TailwindIndicator />
           </ThemeProvider>
         </body>

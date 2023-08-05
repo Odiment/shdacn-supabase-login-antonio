@@ -18,22 +18,22 @@ const active = true
 export function SiteHeader() {
   return (
     <>
-      <header className="items-center flex-col sticky top-0 z-40  border-b bg-secondary">
-        <div className="container flex h-16 items-center space-x-4 sm:justify-between sm:space-x-0">
+      <header className="md:ml-20 lg:ml-20 items-center flex-col sticky top-0 z-40 border-b bg-secondary">
+        <div className="container flex h-16 items-center space-x-3 sm:justify-between sm:space-x-0">
           <MainNav items={siteConfig.mainNav} />
 
-          <div className="flex items-center  space-x-4">
-            <nav className="flex flex-1 justify-end items-center space-x-1 gap-6">
-              <Link className="link" href="/kurumsal">
+          <div className="flex items-center space-x-3">
+            <nav className="flex flex-1 justify-end items-center gap-6 font-medium text-muted-foreground">
+              <Link className="link hover:text-primary" href="/kurumsal">
                 Kurumsal
               </Link>
-              <Link className="link" href="/hizmetlerimiz">
+              <Link className="link hover:text-primary" href="/hizmetlerimiz">
                 Hizmetlerimiz
               </Link>
-              <Link className="link" href="/bilgimerkezi">
-                BilgiMerkezi
+              <Link className="link hover:text-primary" href="/bilgimerkezi">
+                Bilgi Merkezi
               </Link>
-              <Link className="link" href="/iletisim">
+              <Link className="link hover:text-primary" href="/iletisim">
                 İletişim
               </Link>
               <Link
