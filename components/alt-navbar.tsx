@@ -4,6 +4,7 @@ import { useEffect, useState } from "react"
 import Link from "next/link"
 
 import { buttonVariants } from "@/components/ui/button"
+import { AltNavMobile } from "@/components/altnav-mobile"
 
 export function AltNavbar() {
   const [active, setActive] = useState(false)
@@ -84,9 +85,6 @@ export function AltNavbar() {
                   <a href="" className="py-5 px-3 hover:text-primary">
                     Login
                   </a>
-                  {/*             <a href="" className="py-5 px-3 hover:text-primary">
-              Signup
-            </a> */}
                   <Link
                     href="/"
                     rel="noreferrer"
@@ -94,6 +92,9 @@ export function AltNavbar() {
                   >
                     Signup
                   </Link>
+                </div>
+                <div className="md:hidden flex items-center">
+                  <AltNavMobile />
                 </div>
               </div>
             </div>
